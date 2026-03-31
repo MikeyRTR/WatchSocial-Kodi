@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.watchsocial.sync"
+       name="WatchSocial"
+       version="1.0.0"
+       provider-name="WatchSocial">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.json" version="1.0.0"/>
+  </requires>
+  <!-- Video plugin: browsable content menus -->
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <!-- Background service: scrobbling + now-playing -->
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">Browse, track, and sync your TV shows and movies with WatchSocial</summary>
+    <description lang="en_gb">Full WatchSocial integration for Kodi. Browse trending shows, your watchlist, up next episodes, and discover new content — all from within Kodi. Automatically scrobbles watched episodes and movies to your WatchSocial profile with real-time now-playing tracking. Bidirectional sync keeps your Kodi library in sync with WatchSocial.</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+  </extension>
+</addon>

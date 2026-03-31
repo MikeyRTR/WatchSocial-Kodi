@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addons>
+  <addon id="plugin.watchsocial.sync" name="WatchSocial" version="1.0.0" provider-name="WatchSocial">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0" />
+      <import addon="xbmc.json" version="1.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_gb">Browse, track, and sync your TV shows and movies with WatchSocial</summary>
+      <description lang="en_gb">Full WatchSocial integration for Kodi. Browse trending shows, your watchlist, up next episodes, and discover new content — all from within Kodi. Automatically scrobbles watched episodes and movies to your WatchSocial profile with real-time now-playing tracking. Bidirectional sync keeps your Kodi library in sync with WatchSocial.</description>
+      <platform>all</platform>
+      <license>GPL-3.0-or-later</license>
+    </extension>
+  </addon>
+  <addon id="repository.watchsocial" name="WatchSocial Repository" version="1.0.0" provider-name="WatchSocial">
+    <requires>
+      <import addon="xbmc.addon" version="12.0.0" />
+    </requires>
+    <extension point="xbmc.addon.repository" name="WatchSocial Repository">
+      <dir>
+        <info compressed="false">https://raw.githubusercontent.com/MikeyRTR/WatchSocial-Kodi/main/dist/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/MikeyRTR/WatchSocial-Kodi/main/dist/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/MikeyRTR/WatchSocial-Kodi/main/dist/</datadir>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_gb">WatchSocial addon repository</summary>
+      <description lang="en_gb">Install and update WatchSocial addons for Kodi.</description>
+      <platform>all</platform>
+    </extension>
+  </addon>
+</addons>

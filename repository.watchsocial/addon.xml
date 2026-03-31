@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.watchsocial"
+       name="WatchSocial Repository"
+       version="1.0.0"
+       provider-name="WatchSocial">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="WatchSocial Repository">
+    <dir>
+      <info compressed="false">https://mikeyrtr.github.io/WatchSocial-Kodi/addons.xml</info>
+      <checksum>https://mikeyrtr.github.io/WatchSocial-Kodi/addons.xml.md5</checksum>
+      <datadir zip="true">https://mikeyrtr.github.io/WatchSocial-Kodi/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">WatchSocial addon repository</summary>
+    <description lang="en_gb">Install and update WatchSocial addons for Kodi.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

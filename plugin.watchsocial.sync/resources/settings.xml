@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <category label="Account">
+    <setting id="base_url" type="text" label="WatchSocial URL" default="https://watchsocial.tv"
+             help="Your WatchSocial site URL (e.g. https://watchsocial.tv)"/>
+    <setting id="auth_token" type="text" label="Auth Token" default="" option="hidden"
+             help="Your WatchSocial auth token. Get it from Settings > Integrations > Kodi on the website."/>
+  </category>
+  <category label="Scrobbling">
+    <setting id="webhook_url" type="text" label="Webhook URL" default=""
+             help="Paste the webhook URL from your WatchSocial Media Sync settings. Looks like: https://yoursite.com/api/v1/media-sync/webhook?secret=YOUR_SECRET"/>
+    <setting id="scrobble_percent" type="slider" label="Scrobble at % watched" default="80"
+             range="50,5,95"
+             help="Mark as watched when this percentage of the episode/movie has been played"/>
+    <setting id="send_playback_events" type="bool" label="Send now-playing updates" default="true"
+             help="Send play/pause/resume/stop events for live now-playing tracking"/>
+    <setting id="player_name" type="text" label="Player name" default="Kodi"
+             help="Device name shown on your profile (e.g. Living Room Kodi)"/>
+  </category>
+  <category label="Advanced">
+    <setting id="debug_logging" type="bool" label="Enable debug logging" default="false"/>
+  </category>
+</settings>

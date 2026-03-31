@@ -22,9 +22,9 @@
     </requires>
     <extension point="xbmc.addon.repository" name="WatchSocial Repository">
       <dir>
-        <info compressed="false">https://raw.githubusercontent.com/MikeyRTR/WatchSocial-Kodi/main/dist/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/MikeyRTR/WatchSocial-Kodi/main/dist/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/MikeyRTR/WatchSocial-Kodi/main/dist/</datadir>
+        <info compressed="false">https://mikeyrtr.github.io/WatchSocial-Kodi/addons.xml</info>
+        <checksum>https://mikeyrtr.github.io/WatchSocial-Kodi/addons.xml.md5</checksum>
+        <datadir zip="true">https://mikeyrtr.github.io/WatchSocial-Kodi/</datadir>
       </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
